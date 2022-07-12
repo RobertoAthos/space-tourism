@@ -1,13 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 import background2 from '../../assets/destination/background-destination-desktop.jpg'
 
 export const BodyContainer = styled.body`
     background-image: url(${background2});
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-
+    height: 100vh;
 `
+   
 export const Container = styled.section`
     width: 100%;
     max-width: 1385px;
@@ -36,6 +34,5 @@ export const Container = styled.section`
         margin: 20px;
         
     }
-
 
 `
