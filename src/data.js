@@ -2,6 +2,10 @@ import Moon from './assets/destination/image-moon.png'
 import Mars from './assets/destination/image-mars.png'
 import Europa from './assets/destination/image-europa.png'
 import Titan from './assets/destination/image-titan.png'
+import Crew1 from './assets/crew/image-douglas-hurley.png'
+import Crew2 from './assets/crew/image-mark-shuttleworth.png'
+import Crew3 from './assets/crew/image-victor-glover.png'
+import Crew4 from './assets/crew/image-anousheh-ansari.png'
 
 const data = {
     "destinations": [
@@ -46,7 +50,7 @@ const data = {
       {
         "name": "Douglas Hurley",
         "images": {
-          "png": "./assets/crew/image-douglas-hurley.png",
+          "png":Crew1,
         },
         "role": "Commander",
         "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
@@ -54,7 +58,7 @@ const data = {
       {
         "name": "Mark Shuttleworth",
         "images": {
-          "png": "./assets/crew/image-mark-shuttleworth.png",
+          "png": Crew2,
         },
         "role": "Mission Specialist",
         "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
@@ -62,7 +66,7 @@ const data = {
       {
         "name": "Victor Glover",
         "images": {
-          "png": "./assets/crew/image-victor-glover.png",
+          "png": Crew3,
         },
         "role": "Pilot",
         "bio": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer."
@@ -70,7 +74,7 @@ const data = {
       {
         "name": "Anousheh Ansari",
         "images": {
-          "png": "./assets/crew/image-anousheh-ansari.png",
+          "png": Crew4,
         },
         "role": "Flight Engineer",
         "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
