@@ -5,7 +5,7 @@ function Title({title,number}) {
   return (
 
         <TitleContainer>
-            <h2><span>{number}</span>{title}</h2>
+            <h2><span>{number}</span>  {title}</h2>
         </TitleContainer>
    
   )

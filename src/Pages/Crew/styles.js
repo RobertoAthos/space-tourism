@@ -5,6 +5,10 @@ export const CrewBody = styled.body`
     background-image: url(${background3});
     background-size: cover;
     background-repeat: no-repeat;
+   @media(max-width:2560px) {
+    height: 100vh;
+   }
+ 
 `
 export const Container = styled.section`
     width: 100%;
@@ -22,8 +26,8 @@ export const Container = styled.section`
             margin-bottom: 20px;
             text-transform: uppercase;
         }
-        h2{
-            font-size: 2.3rem;
+        h1{
+            font-size: 3rem;
             color:white;
             font-family: 'Bellefair', serif;
             margin-bottom: 28px;
@@ -39,14 +43,21 @@ export const Container = styled.section`
             font-family: 'Barlow Condensed', sans-serif;
         }
         .btn-crew>button{
-            background-color: white;
-            margin: 10px;
+            background: rgba( 151, 151, 151, 0.2 );
+            backdrop-filter: blur( 6px );
+            -webkit-backdrop-filter: blur( 6px );
+            margin: 10px 10px 10px 0px;
             padding: 10px;
             font-family: 'Bellefair', serif;
-            font-size: 1rem
+            font-size: 1rem;
+            color: white;
+            border-radius: 5px;
         }
         .title{
-            margin-bottom: 8rem;
+            padding-bottom: 8rem;
+        }
+        img{
+            max-width: 500px;
         }
     }
 `

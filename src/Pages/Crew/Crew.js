@@ -17,9 +17,9 @@ function Crew() {
         
     <Container>
     <div className='crew-container'>
-    <div className='title'><Title number="02" title="MEET YOUR CREW"/></div>
+    <div className='title'><Title number='02' title='MEET YOUR CREW'/> </div>
         <h3>{role}</h3>
-        <h2>{name}</h2>
+        <h1>{name}</h1>
         <p>{bio}</p>
       <div className='btn-crew'>
           {people.map((items,index)=>(

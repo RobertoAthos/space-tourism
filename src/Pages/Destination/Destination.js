@@ -17,16 +17,18 @@ function Destination() {
         <Header/>
         <Container>
           <div className='planet-img'>
-            <Title number="01" title="PICK YOUR DESTINATION"/>
+          <div className='title'> <Title number="01" title="PICK YOUR DESTINATION"/></div>
             <article>
             <img src={images.png} alt={name} width={"350px"}/>
             </article>
           </div>
           <div className='planet-items'>
            
-            {planets.map((items,index)=>(
-              <button key={index} onClick={()=>setValue(index)}>{items.name}</button>
+          <div className='btns'>
+          {planets.map((items,index)=>(
+           <button key={index} onClick={()=>setValue(index)}>{items.name}</button>
             ))}
+          </div>
 
             <div className='main-text'>
                 <h3>{name}</h3>
@@ -35,10 +37,14 @@ function Destination() {
               <div className='infos'>
               <div className='infos-text'>
                  <ul>
-                  <label>AVB.DISTANCE</label>
+                 <div>
+                    <label>AVB.DISTANCE</label>
                     <li>{distance}</li>
+                 </div>
+                    <div>
                     <label>EST.TRAVEL TIME</label>
                     <li>{travel}</li>
+                    </div>
                  </ul>
               </div>
             </div>
