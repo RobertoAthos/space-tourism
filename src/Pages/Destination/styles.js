@@ -5,7 +5,12 @@ export const BodyContainer = styled.body`
     background-image: url(${background2});
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
+    .title{
+    width: 40%;
+    margin-left: 7rem;
+    padding-top: 4rem;
+    }
 `
    
 export const Container = styled.section`
@@ -16,7 +21,6 @@ export const Container = styled.section`
     justify-content: space-around;
     align-items: center;
     color: white;
-    margin-top: 5rem;
     .planet-items{
         width: 100%;
         max-width: 445px;
@@ -46,7 +50,8 @@ export const Container = styled.section`
         margin-bottom: 25px;
         font-weight: bolder;
     }
-    .active{
+    button:hover{
+        text-decoration: underline;
         text-decoration: underline;
         text-underline-offset: 1rem;
         text-decoration-color:white;
@@ -73,7 +78,4 @@ export const Container = styled.section`
         margin-top: 10px;
 
     }
-    .title{
-        padding-bottom: 8rem;
-        }
 `

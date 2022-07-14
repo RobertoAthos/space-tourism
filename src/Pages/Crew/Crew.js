@@ -14,10 +14,9 @@ function Crew() {
   return (
     <CrewBody>
         <Header/>
-        
+        <div className='title'><Title number='02' title='MEET YOUR CREW'/> </div>
     <Container>
     <div className='crew-container'>
-    <div className='title'><Title number='02' title='MEET YOUR CREW'/> </div>
         <h3>{role}</h3>
         <h1>{name}</h1>
         <p>{bio}</p>

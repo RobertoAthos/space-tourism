@@ -5,9 +5,12 @@ export const CrewBody = styled.body`
     background-image: url(${background3});
     background-size: cover;
     background-repeat: no-repeat;
-   @media(max-width:2560px) {
-    height: 100vh;
-   }
+    height:100%;
+    .title{
+           width: 40%;
+           margin-left: 7rem;
+           padding-top: 4rem;
+        }
  
 `
 export const Container = styled.section`
@@ -52,9 +55,6 @@ export const Container = styled.section`
             font-size: 1rem;
             color: white;
             border-radius: 5px;
-        }
-        .title{
-            padding-bottom: 8rem;
         }
         img{
             max-width: 500px;

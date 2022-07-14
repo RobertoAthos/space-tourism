@@ -50,6 +50,7 @@ export const SectionContainer = styled.section`
         align-items: center;
         color: black;
         transition: transform 300ms;
+        font-family: 'Bellefair', serif;
     }
     .explore:hover{
         transform: scale(1.05);

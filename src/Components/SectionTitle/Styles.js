@@ -6,5 +6,9 @@ export const TitleContainer = styled.div`
     font-family: 'Barlow Condensed', sans-serif;
     span{
         color: #979797;
+        
+    }
+    h2{
+        letter-spacing: 6px;
     }
 `

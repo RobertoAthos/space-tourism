@@ -15,9 +15,9 @@ function Destination() {
   return (
     <BodyContainer>
         <Header/>
+        <div className='title'> <Title number="01" title="PICK YOUR DESTINATION"/></div>
         <Container>
           <div className='planet-img'>
-          <div className='title'> <Title number="01" title="PICK YOUR DESTINATION"/></div>
             <article>
             <img src={images.png} alt={name} width={"350px"}/>
             </article>
