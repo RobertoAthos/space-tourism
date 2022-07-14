@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: ⚠️DEVELOPING⚠️
+- Live Site URL: ⚠️Still Developing⚠️ https://spacetourism-web.vercel.app/
 
 ## My process
 
