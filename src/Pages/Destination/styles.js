@@ -1,11 +1,15 @@
 import styled from "styled-components"
 import background2 from '../../assets/destination/background-destination-desktop.jpg'
+import backgroundTablet from '../../assets/destination/background-destination-tablet.jpg'
 
 export const BodyContainer = styled.body`
     background-image: url(${background2});
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    @media(max-width:768px){
+        background-image: url(${backgroundTablet});
+    }
     .title{
     width: 40%;
     margin-left: 7rem;
@@ -21,6 +25,22 @@ export const Container = styled.section`
     justify-content: space-around;
     align-items: center;
     color: white;
+    @media(max-width:768px){
+        flex-direction: column;
+        text-align: center;
+        .planet-items{
+            p{
+                text-align: center;
+            }
+            .infos-text{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+        }
+    }
+    }
     .planet-items{
         width: 100%;
         max-width: 445px;

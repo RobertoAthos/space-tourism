@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import background4 from '../../assets/technology/background-technology-desktop.jpg'
+import backgrounTablet from '../../assets/technology/background-technology-tablet.jpg'
 
 export const TechBodyContainer = styled.body`
 background-image: url(${background4});
@@ -7,6 +8,11 @@ background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
 color: white;
+@media(max-width:768px){
+    background-image: url(${backgrounTablet});
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .title{
     width: 40%;
     margin-left: 7rem;
@@ -18,14 +24,29 @@ export const Container = styled.section`
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    @media(max-width:768px){
+    flex-direction: column-reverse;
+    text-align: center;
+}
     .tech-text{
         display: flex;
         padding-left: 4rem;
+        @media(max-width:768px){
+            flex-direction: column;
+            .tech-text{
+                padding-left: 0;
+            }
+}
         .main-text{
             padding-left: 5rem;
             width: 100%;
             max-width: 490px;
             height: 300px;
+        }
+        @media(max-width:768px){
+            .main-text{
+                padding-left: 0;
+            }
         }
     }
     button{
@@ -42,6 +63,12 @@ export const Container = styled.section`
         flex-direction: column;
         margin-bottom: 25px;
     }
+    @media(max-width:768px){
+            button{
+               display:inline-flex;
+
+            }
+        }
     h1{
         font-family: 'Bellefair', serif;
         font-size: 2rem;

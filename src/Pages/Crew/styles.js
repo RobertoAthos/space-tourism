@@ -1,11 +1,17 @@
 import styled from "styled-components";
 import background3 from '../../assets/crew/background-crew-desktop.jpg'
+import backgroundTablet from '../../assets/crew/background-crew-tablet.jpg'
 
 export const CrewBody = styled.body`
     background-image: url(${background3});
     background-size: cover;
     background-repeat: no-repeat;
     height:100%;
+    @media(max-width:768px){
+        background-image: url(${backgroundTablet});
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .title{
            width: 40%;
            margin-left: 7rem;
@@ -20,6 +26,10 @@ export const Container = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media(max-width:768px){
+        flex-direction:column;
+        text-align: center;
+    }
     .crew-container{
         max-width: 420px;
         h3{

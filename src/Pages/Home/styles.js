@@ -1,11 +1,18 @@
 import styled from "styled-components";
 import background from '../../assets/home/background-home-desktop.jpg'
+import backgroundTablet from '../../assets/home/background-home-tablet.jpg'
 
 export const BodyContainer = styled.body`
     background-image:url(${background});
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    @media(max-width:768px){
+        height:100%;
+        background-image:url(${backgroundTablet});
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
 `
 export const SectionContainer = styled.section`
     width: 100%;
@@ -16,6 +23,14 @@ export const SectionContainer = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media(max-width:768px){
+        flex-direction: column;
+        text-align: center; 
+        .explore{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+    } 
     .text{
         width: 100%;
         max-width: 450px ;

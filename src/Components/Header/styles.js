@@ -21,6 +21,11 @@ export const HeaderContainer = styled.header`
     background-color:#979797 ;
     margin-left: 8rem;
     }
+    @media(max-width:1000px){
+        .line{
+            display: none;
+        }
+    }
 
 ` 
 export const Links = styled.div`
